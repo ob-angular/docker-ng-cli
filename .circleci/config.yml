@@ -9,6 +9,7 @@ jobs:
       IMAGE_NAME: bnohad/docker-angular-cli
     steps:
       - checkout
+      - setup_remote_docker
 
       - run:
           name: Build docker image $IMAGE_NAME
