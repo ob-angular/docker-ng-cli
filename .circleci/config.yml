@@ -20,6 +20,6 @@ jobs:
           name: Upload to docker hub
           command: |
             docker tag $IMAGE_NAME $IMAGE_NAME:$CIRCLE_BUILD_NUM
-            docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+            docker login -u $DOCKER_USER -p $DOCKER_PASS
             docker push $IMAGE_NAME
 
