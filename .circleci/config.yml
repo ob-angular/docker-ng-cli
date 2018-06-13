@@ -13,7 +13,7 @@ jobs:
       - run:
           name: Build docker image $IMAGE_NAME
           command: |
-            docker build -t $IMAGE_NAME
+            docker build -t "$IMAGE_NAME" .
 
       - run:
           name: Upload to docker hub
