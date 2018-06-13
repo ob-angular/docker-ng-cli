@@ -1,4 +1,4 @@
-FROM node:8.9-alpine
+FROM circleci/node:8.11.2
 
 VOLUME /app
 WORKDIR /app
